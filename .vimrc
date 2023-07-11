@@ -44,6 +44,8 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
+"Flagging Unnecessary Whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 set encoding=utf-8
 

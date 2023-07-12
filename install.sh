@@ -15,16 +15,15 @@ cp .tmux/.tmux.conf.local .
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 
-
 #
 # vim
 #
-curl -L "https://raw.githubusercontent.com/xaker00/dotfiles/master/.vimrc" > $HOME/.vimrc
+wget "https://raw.githubusercontent.com/xaker00/dotfiles/master/.vimrc" -O $HOME/.vimrc
 
 #
 # vundle
 #
-git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 #
